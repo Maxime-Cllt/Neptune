@@ -96,24 +96,22 @@ class DBManage
         $liste_full_caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
 
-        $firstname = $liste_prenoms[rand(0, count($liste_prenoms))];
-        $lastname = $liste_prenoms[rand(0, count($liste_prenoms))];
+        $firstname = $liste_prenoms[rand(0, count($liste_prenoms) - 1)];
+        $lastname = $liste_prenoms[rand(0, count($liste_prenoms) - 1)];
         $birthdate = mt_rand(strtotime("1900-01-01"), strtotime("2023-01-01"));
         $birthdate = date("Y-m-d", $birthdate);
         $password = "123456789";
 
         $pseudo = '';
-        for ($i = 0; $i < rand(5, 20); $i++) {
-            $indice_caractere = rand(0, strlen($liste_caracteres) - 1);
-            $pseudo .= $liste_caracteres[$indice_caractere];
-        }
+        do {
+            for ($i = 0; $i < rand(5, 20); $i++) {
+                $indice_caractere = rand(0, strlen($liste_caracteres) - 1);
+                $pseudo .= $liste_caracteres[$indice_caractere];
+            }
+        } while ($this->pseudoExists($pseudo));
 
-        $login = '';
-        for ($i = 0; $i < rand(5, 20); $i++) {
-            $login .= $liste_full_caracteres[rand(0, strlen($liste_full_caracteres) - 1)];
-        }
 
-        $login .= '@neptune.com';
+        $login = $pseudo . '@neptune.com';
         $this->createUser($login, $password, $firstname, $lastname, $birthdate, $pseudo);
     }
 

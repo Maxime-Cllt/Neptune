@@ -21,6 +21,7 @@ table {
     border-bottom: 1px solid black;
     border-left: 1px solid black;
     position: relative;
+    white-space: pre-wrap;
 }
 
 

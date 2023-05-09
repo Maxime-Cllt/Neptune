@@ -2,17 +2,17 @@
 iframe {
     padding: 16px 32px;
     margin-top: 3%;
-    border: 5px solid red;
+    border: 3px solid red;
     width: 60vh;
     height: 25vh;
-
 }
 
 p {
     text-align: justify-all;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
     margin-bottom: 4%;
+    white-space: pre-wrap;
 }
 
 form {

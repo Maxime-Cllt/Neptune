@@ -98,7 +98,7 @@ if ($handle) {
 <script>
     function AddUser() {
         var nombre = document.getElementById("number_to_add").value;
-        if (nombre > 0 && nombre < 1000) {
+        if (nombre > 0) {
 
             $.ajax({
                 url: '/index.php?controller=admin&action=addRandomUser',

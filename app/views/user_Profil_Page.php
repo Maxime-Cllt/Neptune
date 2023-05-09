@@ -30,14 +30,15 @@ $db = new DBManage();
                         if ($user->profilePicture == 'default.png' or $user->profilePicture == null or strlen($user->profilePicture) <= 0 or !file_exists($user->profilePicture)) {
                             echo "/img/default_user.png";
                         } else {
-                            echo $user->profilePicture;
+                            echo "/" . $user->profilePicture;
                         } ?>  class="img-radius" alt="User-Profile-Image">
                     </a>
                 </div>
                 <h2 style="text-align: center; font-weight: 900;" title="Pseudo"><?php echo $user->pseudo; ?>
                 </h2>
 
-                <a href='/index.php?controller=user&action=getUserModificationPage' class="bouton_edit_profile" title="Modifier le compte">
+                <a href='/index.php?controller=user&action=getUserModificationPage' class="bouton_edit_profile"
+                   title="Modifier le compte">
                     <img src="/img/edit-button.png" class="img_edit_profile">
                 </a>
             </div>
