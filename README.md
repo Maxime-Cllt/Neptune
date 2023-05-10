@@ -39,7 +39,7 @@ des exercices pratiques et des ressources supplémentaires pour renforcer les co
 * SQL
 * Docker
 
-<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Relationnelle.png" width="400" height="400"/>
+<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Relationnelle.png" width="500" height="500"/>
 
 
 ## Auteurs
