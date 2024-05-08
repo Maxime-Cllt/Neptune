@@ -14,8 +14,9 @@ des exercices pratiques et des ressources supplémentaires pour renforcer les co
 * Plateforme conviviale et facile à utiliser pour une expérience d'apprentissage agréable
 * Forum de discussion entre les apprenants
 
-<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Use_Case.png" width="500" height="500"/>
-
+<div align="center">
+<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Use_Case.png" width="350" height="350" alt="Diagramme Use Case"/>
+</div>
 
 ## Comment utiliser ce site
 
@@ -39,8 +40,9 @@ des exercices pratiques et des ressources supplémentaires pour renforcer les co
 * SQL
 * Docker
 
-<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Relationnelle.png" width="500" height="500"/>
-
+<div align="center">
+<img src="https://github.com/Maxime-Cllt/Projet-DAW/blob/main/public/img/Diagramme_Relationnelle.png" width="350" height="350" alt="Diagramme Relationnelle"/>
+</div>
 
 ## Auteurs
 
